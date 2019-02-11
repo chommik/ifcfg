@@ -30,3 +30,6 @@
 <hr />
 
 manual: <%= link_to man_path, man_path %>
+<br />
+available on <%= link_to 'http', url_for(protocol: :http, only_path: false) %>
+and <%= link_to 'https', url_for(protocol: :https, only_path: false) %>
