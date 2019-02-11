@@ -1,0 +1,32 @@
+<%= render 'ip_address' %>
+
+<hr />
+
+<%= render 'http_headers' %>
+
+<hr />
+
+<h2>
+  Other formats
+</h2>
+
+<div class="curl-examples">
+  curl/wget autodetection
+
+  <ul>
+    <li>curl <%= url_link ip_url %></li>
+    <li>curl <%= url_link host_url %></li>
+    <li>curl <%= url_link headers_url %></li>
+  </ul>
+
+  JSON format
+
+  <ul>
+    <li>curl <%= url_link ip_url(format: :json) %></li>
+    <li>curl <%= url_link headers_url(format: :json) %></li>
+  </ul>
+</div>
+
+<hr />
+
+manual: <%= link_to man_path, man_path %>

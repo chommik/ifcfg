@@ -1,0 +1,17 @@
+<h2>
+  HTTP headers
+  <span class="links">
+    <%= link_to '#html', headers_path %>
+    <%= link_to '#text', headers_path(format: :text) %>
+    <%= link_to '#json', headers_path(format: :json) %>
+  </span>
+</h2>
+
+<table id="headers-table">
+  <% @headers.each do |name, value| %>
+    <tr>
+      <td><%= format_header_name name %>:</td>
+      <td><%= value %></td>
+    </tr>
+  <% end %>
+</table>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= request.host %></title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag 'application', media: 'all' %>
+  </head>
+
+  <body>
+    <div id="container">
+      <h1>ifcfg on <%= link_to root_url, root_path %></h1>
+      <%= yield %>
+    </div>
+  </body>
+</html>

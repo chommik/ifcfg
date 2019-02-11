@@ -1,0 +1,30 @@
+#ip-table td:nth-child(1) {
+    width: 10em;
+}
+
+.links {
+    padding-left: 4rem;
+    font-size: 75%;
+}
+
+#headers-table {
+    word-break: break-all;
+    font-size: 85%;
+}
+
+#headers-table td:nth-child(1) {
+    width: 25%;
+}
+
+#headers-table td:nth-child(2) {
+    width: 75%;
+}
+
+.curl-examples li:before {
+    content: "$ ";
+    display: inline;
+}
+
+.curl-examples ul {
+    list-style-type: none;
+}

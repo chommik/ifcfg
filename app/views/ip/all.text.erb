@@ -1,0 +1,12 @@
+#
+# ifcfg on <%= request.host %>
+#
+# html:   <%= root_url %>
+# manual: <%= man_url %>
+
+IP address: <%= @ip %>
+DNS host: <%= @host %>
+HTTP headers:
+<% @headers.each do |name, value| %>
+  <%= format_header_name name %>: <%= value %>
+<% end %>
