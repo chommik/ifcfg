@@ -31,5 +31,8 @@ module Ifcfg
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    config.middleware.delete ActionDispatch::Cookies
+    config.middleware.delete ActionDispatch::Session::CookieStore
   end
 end
