@@ -21,9 +21,12 @@ class IpController < ApplicationController
 
   private
   def set_headers
-    @headers = request.headers
-                   .find_all {|name, value| name.starts_with? 'HTTP_' and not name == 'HTTP_VERSION'}
-                   .map {|name, value| [name[5..-1], value]}
+    header_names = request.each_header.filter do |name, _|
+      name.starts_with? "HTTP"
+    end
+
+    @headers = header_names.to_h { |name, _| [name[5..], request.headers.fetch(name)] }
+    @headers.except! "VERSION"
   end
 
   def set_host

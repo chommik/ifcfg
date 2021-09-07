@@ -1,7 +1,4 @@
-/*
- *= require_tree .
- *= require_self
- */
+@import '../stylesheets/ip.css';
 
 #container {
     background-color: #fff;
@@ -24,3 +21,4 @@ body h1:first-child {
 * {
     box-sizing: border-box;
 }
+

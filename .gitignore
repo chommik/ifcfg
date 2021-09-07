@@ -13,6 +13,7 @@
 !/log/.keep
 !/tmp/.keep
 
+/vendor
 
 /public/assets
 .byebug_history
@@ -22,3 +23,10 @@
 
 # Ignore IDE configuration
 /.idea
+
+/public/packs
+/public/packs-test
+/node_modules
+/yarn-error.log
+yarn-debug.log*
+.yarn-integrity
