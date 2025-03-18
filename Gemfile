@@ -7,7 +7,7 @@ gem 'rails', '~> 7.0'
 gem 'puma', '~> 6.0'
 gem 'jbuilder', '~> 2.5'
 
-gem 'shakapacker', '~> 7.0.0'
+gem 'shakapacker', '~> 8.0.0'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
