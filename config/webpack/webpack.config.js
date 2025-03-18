@@ -1,4 +1,5 @@
-const { webpackConfig, merge } = require('@rails/webpacker');
+const { webpackConfig, merge } = require('shakapacker')
+
 const customConfig = {
     resolve: {
         // Add additional file types
